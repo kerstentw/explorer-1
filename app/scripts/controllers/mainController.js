@@ -20,7 +20,7 @@ angular.module('ethExplorer')
           }
         });
         */
-
+        /*
         setInterval(()=>{
           updateBlockList();
           updateTXList();
@@ -28,7 +28,7 @@ angular.module('ethExplorer')
           getHashrate();
           $scope.$apply();
         },20000);
-
+        */
 
 
         $scope.processRequest= function(){
