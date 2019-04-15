@@ -4,12 +4,11 @@ angular.module('ethExplorer')
     .controller('mainCtrl', function ($rootScope, $scope, $location) {
 
         // Display & update block list
-        getETHRates();
         updateBlockList();
         updateTXList();
         updateStats();
         getHashrate();
-
+    /*
         web3.eth.filter("latest", function(error, result){
           if (!error) {
             getETHRates();
@@ -20,6 +19,17 @@ angular.module('ethExplorer')
             $scope.$apply();
           }
         });
+        */
+
+        setInterval(()=>{
+          updateBlockList();
+          updateTXList();
+          updateStats();
+          getHashrate();
+          $scope.$apply();
+        },20000);
+
+
 
         $scope.processRequest= function(){
             var requestStr = $scope.ethRequest;

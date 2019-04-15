@@ -7,8 +7,8 @@
   <base href="/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ethereum Block Explorer</title>
-  <meta name="description" content="An Ethereum (ETH) Block Explorer">
+  <title>Quorum Block Explorer</title>
+  <meta name="description" content="Quorum-Seoul Cluster Explorer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
@@ -19,21 +19,25 @@
 <body>
 <nav class="navbar navbar-dark navbar-static-top" role="navigation">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header" style = "height: 90px; text-align: center">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="./#/">ETHER EXPLORER</a>
+        <a class = "navbar-brand" href="./#/" style="padding:0; margin-top: 10px; margin-left: 10px;">
+          <img src="https://cdn.prftech.com/imgs/quorum_logo_clean.png" style="height:50px;padding: 5px">Quorum
+        </a>
+
     </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar-collapse-1" >
+      <!--
         <ul class="nav navbar-nav">
             <li><a href="./#/">Home</a></li>
             <li><a href="./#/chain">Blockchain Info</a></li>
-        </ul>
-        <div class="col-sm-3 col-md-3 pull-right">
+        </ul>-->
+        <div class="pull-right">
             <form class="navbar-form"  ng-controller="mainCtrl" ng-submit="processRequest()" name="search_form" role="search">
-                <div class="input-group">
+                <div class="input-group mb-12">
                     <input type="text" placeholder="Tx Hash, Address, or Block #" name="requestType" required  ng-model="ethRequest"  class="form-control searchi">
                     <div class="input-group-btn">
                         <button class="btn btn-primary btn-blue" type="submit"><i class="fa fa-search"></i></button>
@@ -96,8 +100,8 @@ function shapeshift_click(a,e) {
 
 <div class="footer styledfoot">
     <footer><br />
-            © ETHER EXPLORER 2016 | <a href="http://github.com/carsenk/explorer">Fork me on GitHub</a><br />
-            Helpful Links: ethereum.org | gdax.com | coinbase.com
+            © QUORUM-SEOUL 2019 | <a href="https://github.com/jpmorganchase/quorum">Quorum on GitHub</a><br />
+
             <br />
     </footer>
 </div>

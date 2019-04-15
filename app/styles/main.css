@@ -48,6 +48,10 @@ body {
   color: #FFF;
 }
 
+.navbar-logo {
+
+}
+
 .title {
   color: #FFF;
   font-weight: bold;
@@ -141,6 +145,8 @@ input.searchimain {
   background-color: #293640;
   width:100%;
 }
+
+
 
 // make the rpc command dialogue wider
 #connectwarning {width:900px;}
