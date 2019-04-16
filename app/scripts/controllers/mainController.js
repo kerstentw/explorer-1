@@ -222,6 +222,13 @@ angular.module('ethExplorer')
             }
         }
 
+        $scope.updateBlocksOnView = ()=>{
+          updateBlockList();
+        }
+        $scope.updateTransactionsOnView = ()=>{
+          updateTXList();
+        }
+
     });
 
 angular.module('filters', []).
